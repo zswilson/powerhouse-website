@@ -30,6 +30,9 @@ p, li {
 }
 
 .nav-item {
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: 'ubuntu', sans-serif;
     margin: 15px 40px 15px 0 !important; 
     color: black !important;
     text-decoration:none;
@@ -51,8 +54,9 @@ p, li {
 
 .smartforms-modal-trigger {
     font-weight: 400;
-    background-color: #dc3545;
+    background-color: #d11a14;
     margin: 10px auto;
+    box-shadow: 0px 0px 8px #1b1b1b;
 }
 
 
@@ -66,9 +70,18 @@ p, li {
 }
 
 .title-text {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
+    font-family: 'Mina', sans-serif;
+    font-weight: 500;
+    font-style: italic;
     padding: 0 25px 50px;
+    /* background: #D90D0D; */
+    background: -moz-linear-gradient(top, #D90D0D 0%, #A33131 70%, #000000 100%);
+    background: -webkit-linear-gradient(top, #D90D0D 0%, #A33131 70%, #000000 100%);
+    background: linear-gradient(to bottom, #D90D0D 0%, #A33131 70%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* text-shadow: 3px 3px 8px #3b3b3b; */
+    text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000, 2px 2px 2px #e33030;
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
         -ms-animation: fadein 3s; /* Internet Explorer */
@@ -107,7 +120,7 @@ p, li {
 
 .title-paragraph-1 {
     font-weight: 400;
-    padding: 0 25px 50px;
+    padding: 0 35px 50px;
 }
 
 .title-paragraph-2 {
@@ -139,9 +152,16 @@ p, li {
     padding: 5% 7% 5%;
 }
 
-.half-line {
+.bio-hr {
     width: 50%;
-    height: 2px;
+    background-color: #d11a14;
+    border-style: none;
+    border-top-style: solid;
+    border-width: 2px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 5px #303030;
+    /* margin-left: 0; */
 }
 
 /* Services Section */
@@ -158,6 +178,17 @@ p, li {
     text-align: center;
 }
 
+.services-hr {
+    width: 25%;
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 9px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-color: #d11a14;
+    text-shadow: 0px 0px 10px #3f3f3f;
+}
+
 .card-services {
     background-image: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 100%);
 }
@@ -170,6 +201,7 @@ p, li {
     width: 100%;
     height: 19vw;
     object-fit: cover;
+    box-shadow: -10px 0px 13px -7px #303030, 10px 0px 13px -7px #000000, 0px 0px 25px 0px #303030 !important;
 }
 
 /* Gallery Section */
@@ -177,6 +209,10 @@ p, li {
 #gallery-section .container-fluid {
     background-color: #b8b0b0;
     padding: 2% 2%;
+}
+
+.gallery-img {
+    box-shadow: -10px 0px 13px -7px #303030, 10px 0px 13px -7px #000000, 0px 0px 30px 15px #303030 !important;
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -197,31 +233,35 @@ p, li {
 
 .contact-information {
     margin-left: 50px;
+    text-align: center;
 }
 
-.contact-line {
-    background-color: red;
-    height: 1px;
+.contact-hr {
+    width: 90%;
+    background-color: #d11a14;
+    border-style: none;
+    border-top-style: solid;
+    border-width: 2px;
+    box-shadow: 0px 0px 3px #3f3f3f;
 }
 
-.contact-phone {
-    padding-left: 10px;
+.phone-btn {
+    box-shadow: 1px 1px 5px #1b1b1b;
 }
 
-.contact-email {
-    padding-left: 10px;
-    color: black;
+.email-btn {
+    margin-top: 15px;
+    box-shadow: 1px 1px 5px #1b1b1b;
 }
 
 .facebook-icon {
-    justify-content: center;
     color: #3b5998;
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 .google-icon {
     color: #0F9D58;
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 .yelp-icon {
@@ -229,21 +269,8 @@ p, li {
 }
 
 .contact-logo {
-    width: 375px;
-    margin-left: 30px;
-}
-
-.nav-link {
-    font-size: 1.3rem;
-    font-family: 'ubuntu', sans-serif;
-    font-weight: 400;
-    margin: 0 10px;
-    color: rgb(207, 19, 19);
-}
-
-.nav-link:hover {
-    color: rgb(255, 2, 2);
-    font-weight: 500;
+    width: 385px;
+    margin-left: 10px;
 }
 
 .copyright {
