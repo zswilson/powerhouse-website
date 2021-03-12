@@ -206,18 +206,45 @@ p, li {
 
 /* Gallery Section */
 
-#gallery-section .container-fluid {
+.gallery-container {
     background-color: #b8b0b0;
-    padding: 2% 2%;
+    padding: 2% 2% 0%;
 }
 
 .gallery-img {
     box-shadow: -10px 0px 13px -7px #303030, 10px 0px 13px -7px #000000, 0px 0px 30px 15px #303030 !important;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    height: 75px;
-    width: 75px;
+.gallery-control {
+    height: 30px;
+    width: 30px;
+}
+
+.reviews-container {
+    background-color: #b8b0b0;
+    padding: 7% 3%;
+}
+
+.reviews-text-box {
+    padding: 3% 15%;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 100%);
+}
+
+.reviews-text {
+    font-size: 1.2rem;
+    font-family: 'ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+.review-name {
+    margin-top: 25px;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.reviews-control {
+    height: 15px;
+    width: 15px;
 }
 
 /* Contact Section */
@@ -237,7 +264,7 @@ p, li {
 }
 
 .contact-hr {
-    width: 90%;
+    width: 50%;
     background-color: #d11a14;
     border-style: none;
     border-top-style: solid;
@@ -250,7 +277,7 @@ p, li {
 }
 
 .email-btn {
-    margin-top: 15px;
+    margin: 15px auto;
     box-shadow: 1px 1px 5px #1b1b1b;
 }
 
@@ -269,7 +296,7 @@ p, li {
 }
 
 .contact-logo {
-    width: 385px;
+    width: 360px;
     margin-left: 10px;
 }
 
