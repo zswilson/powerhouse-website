@@ -220,6 +220,10 @@ p, li {
     width: 30px;
 }
 
+.gallery-indicator {
+    color: #A33131 !important;
+}
+
 .reviews-container {
     background-color: #b8b0b0;
     padding: 7% 3%;
