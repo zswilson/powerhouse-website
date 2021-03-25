@@ -54,7 +54,7 @@ p, li {
 
 .smartforms-modal-trigger {
     font-weight: 400;
-    background-color: #d11a14;
+    background-color: #ca1f19;
     margin: 10px auto;
     box-shadow: 0px 0px 8px #1b1b1b;
 }
@@ -148,7 +148,7 @@ p, li {
 /* About Us Section */
 
 #about-us-section .container-fluid {
-    background-color: #fbf0f0;
+    background-color: #f0f5f9;
     padding: 5% 7% 5%;
 }
 
@@ -207,12 +207,28 @@ p, li {
 /* Gallery Section */
 
 .gallery-container {
-    background-color: #b8b0b0;
-    padding: 2% 2% 0%;
+    /* background-color: #52616b; */
+    background: #F0F5F9;
+    background: -moz-radial-gradient(center, #F0F5F9 0%, #23292E 0%, #F0F5F9 100%);
+    background: -webkit-radial-gradient(center, #F0F5F9 0%, #23292E 0%, #F0F5F9 100%);
+    background: radial-gradient(ellipse at center, #F0F5F9 0%, #23292E 0%, #F0F5F9 100%);
+    padding: 5% 2% 0%;
 }
 
-.gallery-img {
-    box-shadow: -10px 0px 13px -7px #303030, 10px 0px 13px -7px #000000, 0px 0px 30px 15px #303030 !important;
+/* .gallery-shadow {
+    box-shadow: -10px 0px 13px -7px #303030, 10px 0px 13px -7px #000000, 0px 0px 10px 3px #303030 !important;
+} */
+
+.carousel-item {
+    width: 100%; 
+    height: 800px; 
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .gallery-control {
@@ -225,13 +241,15 @@ p, li {
 }
 
 .reviews-container {
-    background-color: #b8b0b0;
-    padding: 7% 3%;
+    background-color: transparent;
+    padding: 5% 4%;
 }
 
 .reviews-text-box {
-    padding: 3% 15%;
+    padding: 6% 12%;
     background-image: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 100%);
+    height: 300px;
+    justify-content: center;
 }
 
 .reviews-text {
@@ -241,7 +259,7 @@ p, li {
 }
 
 .review-name {
-    margin-top: 25px;
+    margin-top: 15px;
     font-size: 1rem;
     font-style: italic;
 }
@@ -254,7 +272,7 @@ p, li {
 /* Contact Section */
 
 #contact-section .container-fluid {
-    background-color: #fbf0f0;
+    background-color: #F0F5F9;
     padding: 3% 10% 3%;
 }
 
@@ -308,11 +326,11 @@ p, li {
     margin-top: 30px;
 }
 
-/* Mobile Adjustments */
+/*--------- Mobile Adjustments ---------*/
+
+/* NavBar Optimizations */
 
 @media (min-width: 1550px) {
-
-    /* NavBar  */
 
     .navbar-expand-custom {
         flex-direction: row;
@@ -335,6 +353,28 @@ p, li {
 
 }
 
+@media (max-width: 1549px) {
+
+    .nav-item {
+        width: 325px;
+        margin-left: 50px !important;
+        text-align: center;
+    }
+
+    .navbar-nav .form-button {
+        width: 325px;
+        text-align: center;
+        margin-left: 50px !important;
+    }
+
+    .navbar-nav .smartforms-modal-trigger {
+        width: 325px;
+    }
+
+}
+
+/* About Us and Services Sections Mobile Optimization */
+
 @media (max-width: 1200px) {
 
     .card-mobile {
@@ -354,8 +394,90 @@ p, li {
         height: 35vw;
         object-fit: cover;
     }
+
 }
 
+/* Gallery Section Mobile Optimizations */
+
+@media (min-width: 1201px) and (max-width: 1920px) {
+
+    .carousel-item {
+        height: 1000px; 
+    }
+
+    .reviews-container {
+        padding: 5% 15%;
+    }
+
+    .reviews-text-box {
+        height: 275px;
+    }
+
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+
+    .carousel-item {
+        height: 900px; 
+    }
+
+    .reviews-container {
+        padding: 5% 15%; 
+    }
+
+    .reviews-text-box {
+        height: 275px;
+        padding: 5% 11%;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .carousel-item {
+        height: 600px; 
+    }
+
+    .reviews-text-box {
+        height: 300px;
+        padding: 6% 8%;
+    }
+
+}
+
+/* Gallery Section UW/HiRes Desktop Optimizations */
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+
+    .carousel-item {
+        height: 1400px; 
+    }
+
+    .reviews-container {
+        padding: 5% 18%;
+    }
+
+    .reviews-text-box {
+        height: 275px;
+    }
+
+}
+
+@media (min-width: 2561px) and (max-width: 3440px) {
+
+    .carousel-item {
+        height: 1600px; 
+    }
+
+    .reviews-container {
+        padding: 5% 20%;
+    }
+
+    .reviews-text-box {
+        height: 325px;
+    }
+
+}
 
 /* Smart Form Adjustments */
 
