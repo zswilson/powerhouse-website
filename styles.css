@@ -11,11 +11,10 @@ p, li {
     font-size: large;
 }
 
-
 /* Title Section */
 
 #title-section .container-fluid {
-    padding: 3% 10% 3%;
+    padding: 3% 10%;
     background-image: url(images/downtown-tucson.jpg);
     background-size: cover;
     background-position: center center;
@@ -31,8 +30,8 @@ p, li {
 
 .nav-item {
     font-size: 1.3rem;
-    font-weight: 400;
-    font-family: 'ubuntu', sans-serif;
+    font-weight: 500;
+    font-family: 'Lora', serif;
     margin: 15px 40px 15px 0 !important; 
     color: black !important;
     text-decoration:none;
@@ -53,12 +52,12 @@ p, li {
 /* Form Button */
 
 .smartforms-modal-trigger {
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     background-color: #ca1f19;
     margin: 10px auto;
     box-shadow: 0px 0px 8px #1b1b1b;
 }
-
 
 /* Title Section */
 
@@ -70,18 +69,19 @@ p, li {
 }
 
 .title-text {
-    font-family: 'Mina', sans-serif;
-    font-weight: 500;
-    font-style: italic;
+    font-family: 'Tinos', serif;
+    font-size: 4rem;
+    font-weight: 700;
+    /* font-style: italic; */
     padding: 0 25px 50px;
-    /* background: #D90D0D; */
-    background: -moz-linear-gradient(top, #D90D0D 0%, #A33131 70%, #000000 100%);
-    background: -webkit-linear-gradient(top, #D90D0D 0%, #A33131 70%, #000000 100%);
-    background: linear-gradient(to bottom, #D90D0D 0%, #A33131 70%, #000000 100%);
+    background: #D90D0D;
+    background: -moz-linear-gradient(top, #D90D0D 0%, #301414 50%, #000000 100%);
+    background: -webkit-linear-gradient(top, #D90D0D 0%, #301414 50%, #000000 100%);
+    background: linear-gradient(to bottom, #D90D0D 0%, #301414 50%, #000000 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     /* text-shadow: 3px 3px 8px #3b3b3b; */
-    text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000, 2px 2px 2px #e33030;
+    /* text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000, 2px 2px 2px #e33030; */
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
         -ms-animation: fadein 3s; /* Internet Explorer */
@@ -119,24 +119,17 @@ p, li {
 }
 
 .title-paragraph-1 {
-    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
     padding: 0 35px 50px;
 }
 
 .title-paragraph-2 {
-    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
 }
-
-/* Old jumbotron line break
-.jumbotron-line-break {
-    border-color: red;
-    border-style: none;
-    border-top-style: dotted;
-    border-width: 8px;
-    width: 15%;
-    margin: 5rem auto 5rem !important;
-}
-*/
 
 .title-logo {
     width: 35%;
@@ -149,7 +142,7 @@ p, li {
 
 #about-us-section .container-fluid {
     background-color: #f0f5f9;
-    padding: 5% 7% 5%;
+    padding: 5% 7%;
 }
 
 .bio-hr {
@@ -164,10 +157,28 @@ p, li {
     /* margin-left: 0; */
 }
 
+.card-title {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.card-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.list-group-item {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
 /* Services Section */
 
 #services-section .container-fluid {
-    padding: 5% 7% 5%;
+    padding: 5% 7%;
     background-image: url(images/powerhouse-img5.jpg);
     background-size: cover;
     background-position: center center;
@@ -185,8 +196,7 @@ p, li {
     border-width: 9px;
     margin-top: 25px;
     margin-bottom: 25px;
-    border-color: #d11a14;
-    text-shadow: 0px 0px 10px #3f3f3f;
+    border-color: #a71510;
 }
 
 .card-services {
@@ -207,17 +217,20 @@ p, li {
 /* Gallery Section */
 
 .gallery-container {
-    /* background-color: #52616b; */
-    background: #F0F5F9;
-    background: -moz-radial-gradient(center, #F0F5F9 0%, #23292E 0%, #F0F5F9 100%);
-    background: -webkit-radial-gradient(center, #F0F5F9 0%, #23292E 0%, #F0F5F9 100%);
-    background: radial-gradient(ellipse at center, #F0F5F9 0%, #23292E 0%, #F0F5F9 100%);
-    padding: 5% 2% 0%;
+    background: #FAFDFF;
+    background: -moz-radial-gradient(center, #FAFDFF 0%, #ADB9BF 50%, #60717D 100%);
+    background: -webkit-radial-gradient(center, #FAFDFF 0%, #ADB9BF 50%, #60717D 100%);
+    background: radial-gradient(ellipse at center, #FAFDFF 0%, #ADB9BF 50%, #60717D 100%);
+    padding: 3% 2% 0%;
 }
 
-/* .gallery-shadow {
-    box-shadow: -10px 0px 13px -7px #303030, 10px 0px 13px -7px #000000, 0px 0px 10px 3px #303030 !important;
-} */
+.gallery-shadow {
+    box-shadow: -10px 0px 13px -7px #303030, 10px 0px 13px -7px #000000, 0px 0px 60px 15px #303030 !important;
+}
+
+.carousel-inner {
+    border-radius: 30px;
+}
 
 .carousel-item {
     width: 100%; 
@@ -232,57 +245,60 @@ p, li {
 }
 
 .gallery-control {
-    height: 30px;
-    width: 30px;
-}
-
-.gallery-indicator {
-    color: #A33131 !important;
+    height: 40px;
+    width: 40px;
 }
 
 .reviews-container {
-    background-color: transparent;
     padding: 5% 4%;
 }
 
+.reviews-carousel {
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px -15px #303030 !important;
+}
+
 .reviews-text-box {
-    padding: 6% 12%;
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 100%);
+    padding: 5% 10%;
     height: 300px;
-    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.001) 25%,rgba(255,255,255,0.9) 100%);
 }
 
 .reviews-text {
     font-size: 1.2rem;
-    font-family: 'ubuntu', sans-serif;
-    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 .review-name {
     margin-top: 15px;
     font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
     font-style: italic;
 }
 
 .reviews-control {
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
 }
 
 /* Contact Section */
 
 #contact-section .container-fluid {
     background-color: #F0F5F9;
-    padding: 3% 10% 3%;
+    padding: 3% 10%;
 }
 
 .contact-box {
-    margin: 10px;
+    
 }
 
 .contact-information {
-    margin-left: 50px;
     text-align: center;
+    min-width: 450px;
+    max-width: 650px;
 }
 
 .contact-hr {
@@ -318,8 +334,8 @@ p, li {
 }
 
 .contact-logo {
-    width: 360px;
-    margin-left: 10px;
+    max-width: 400px;
+    margin-right: 40px;
 }
 
 .copyright {
@@ -391,7 +407,7 @@ p, li {
 
     .card-img {
         width: 100%;
-        height: 35vw;
+        height: 45vw;
         object-fit: cover;
     }
 
@@ -443,6 +459,16 @@ p, li {
         padding: 6% 8%;
     }
 
+}
+
+/* Contact Section Mobile Optimization */
+
+@media (max-width: 1100px) {
+
+    .contact-box {
+        margin-top: 25px;
+    }
+    
 }
 
 /* Gallery Section UW/HiRes Desktop Optimizations */
