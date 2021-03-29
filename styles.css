@@ -1,17 +1,9 @@
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
-h3 {
-    font-weight: 500;
-}
-
-p, li {
-    font-size: large;
-}
-
-/* Title Section */
+/*--------------------------- Title Section ---------------------------*/
 
 #title-section .container-fluid {
     padding: 3% 10%;
@@ -21,16 +13,24 @@ p, li {
     background-attachment: fixed;
 }
 
-/* Navbar  */
+/*--------------------------- Navbar  ---------------------------*/
 
 .navbar {
     background-image: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%,rgba(255,255,255,0.9) 100%);
-    padding: 15px 10%;
+    padding: 2px 10%;
+}
+
+.navbar-brand {
+    min-width: 210px;
+}
+
+.nav-logo {
+    height: 90px;
 }
 
 .nav-item {
     font-size: 1.3rem;
-    font-weight: 500;
+    font-weight: 600;
     font-family: 'Lora', serif;
     margin: 15px 40px 15px 0 !important; 
     color: black !important;
@@ -44,22 +44,26 @@ p, li {
 .nav-item:hover {
     color: rgb(219, 27, 27) !important;
     border-style: solid;
-    border-width: 0px 0px 3px 0px;
-    padding: 3px;
-
+    border-width: 0px 0px 4px 0px;
+    padding: 2px;
 }
 
-/* Form Button */
+/*--------------------------- Form Button ---------------------------*/
 
 .smartforms-modal-trigger {
     font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
-    background-color: #ca1f19;
+    font-weight: 500;
+    background-color: #c50e08;
     margin: 10px auto;
     box-shadow: 0px 0px 8px #1b1b1b;
 }
 
-/* Title Section */
+.smartforms-modal-trigger:hover {
+    background-color: #b10e08;
+    box-shadow: 0px 2px 11px #1b1b1b;
+}
+
+/*--------------------------- Title Section ---------------------------*/
 
 .jumbotron {
     position: relative;
@@ -72,7 +76,6 @@ p, li {
     font-family: 'Tinos', serif;
     font-size: 4rem;
     font-weight: 700;
-    /* font-style: italic; */
     padding: 0 25px 50px;
     background: #D90D0D;
     background: -moz-linear-gradient(top, #D90D0D 0%, #301414 50%, #000000 100%);
@@ -80,8 +83,6 @@ p, li {
     background: linear-gradient(to bottom, #D90D0D 0%, #301414 50%, #000000 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* text-shadow: 3px 3px 8px #3b3b3b; */
-    /* text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000, 2px 2px 2px #e33030; */
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
         -ms-animation: fadein 3s; /* Internet Explorer */
@@ -125,12 +126,6 @@ p, li {
     padding: 0 35px 50px;
 }
 
-.title-paragraph-2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 1.4rem;
-}
-
 .title-logo {
     width: 35%;
     position: relative;
@@ -138,7 +133,7 @@ p, li {
     margin: 0 auto;
 }
 
-/* About Us Section */
+/*--------------------------- About Us Section ---------------------------*/
 
 #about-us-section .container-fluid {
     background-color: #f0f5f9;
@@ -154,7 +149,6 @@ p, li {
     margin-top: 25px;
     margin-bottom: 25px;
     box-shadow: 0px 0px 5px #303030;
-    /* margin-left: 0; */
 }
 
 .card-title {
@@ -175,7 +169,7 @@ p, li {
     font-weight: 500;
 }
 
-/* Services Section */
+/*--------------------------- Services Section ---------------------------*/
 
 #services-section .container-fluid {
     padding: 5% 7%;
@@ -214,7 +208,7 @@ p, li {
     box-shadow: -10px 0px 13px -7px #303030, 10px 0px 13px -7px #000000, 0px 0px 25px 0px #303030 !important;
 }
 
-/* Gallery Section */
+/*--------------------------- Gallery Section ---------------------------*/
 
 .gallery-container {
     background: #FAFDFF;
@@ -229,7 +223,7 @@ p, li {
 }
 
 .carousel-inner {
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .carousel-item {
@@ -263,13 +257,13 @@ p, li {
     height: 300px;
     text-align: center;
     border-radius: 10px;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.001) 25%,rgba(255,255,255,0.9) 100%);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.001) 35%,rgba(255,255,255,0.8) 65%);
 }
 
 .reviews-text {
     font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .review-name {
@@ -284,15 +278,11 @@ p, li {
     width: 20px;
 }
 
-/* Contact Section */
+/*--------------------------- Contact Section ---------------------------*/
 
 #contact-section .container-fluid {
     background-color: #F0F5F9;
     padding: 3% 10%;
-}
-
-.contact-box {
-    
 }
 
 .contact-information {
@@ -315,26 +305,29 @@ p, li {
 }
 
 .email-btn {
-    margin: 15px auto;
+    margin: 20px auto 1px;
     box-shadow: 1px 1px 5px #1b1b1b;
 }
 
 .facebook-icon {
     color: #3b5998;
     margin-right: 25px;
+    margin-top: 10px;
 }
 
 .google-icon {
     color: #0F9D58;
     margin-right: 25px;
+    margin-top: 10px;
 }
 
 .yelp-icon {
     color: #c41200;
+    margin-top: 10px;
 }
 
 .contact-logo {
-    max-width: 400px;
+    max-width: 380px;
     margin-right: 40px;
 }
 
@@ -342,12 +335,12 @@ p, li {
     margin-top: 30px;
 }
 
-/*--------- Mobile Adjustments ---------*/
+/*--------- Media Query Optimizations ---------*/
 
 /* NavBar Optimizations */
 
 @media (min-width: 1550px) {
-
+    /* All below - removes navbar hamburger menu and aligns nav links to the right side */
     .navbar-expand-custom {
         flex-direction: row;
         flex-wrap: nowrap;
@@ -376,16 +369,118 @@ p, li {
         margin-left: 50px !important;
         text-align: center;
     }
-
     .navbar-nav .form-button {
         width: 325px;
         text-align: center;
         margin-left: 50px !important;
     }
-
     .navbar-nav .smartforms-modal-trigger {
         width: 325px;
     }
+
+}
+
+@media (max-width: 1150px) {
+
+    .navbar {
+        padding: 10px;
+    }
+    .navbar-brand {
+        width: 250px;
+    }
+    .nav-logo-sm, .contact-logo {
+        display: none;
+    }
+    .jumbotron {
+        padding: 25px 10px;
+    }
+    .card-text {
+        text-align: center;
+    }
+
+}
+
+/* Global Font and Spacing Optimization */
+
+@media (max-width: 576px) {
+    
+    .form-title {
+        font-size: 1.4rem !important;
+    }
+    .navbar {
+        padding: 5px 15px;
+    }
+    .navbar-brand {
+        width: 200px;
+    }
+    .nav-logo {
+        height: 55px;
+    }
+    .nav-item {
+        font-size: 1.2rem;
+        width: 250px;
+        text-align: center;
+        justify-content: center;
+    }
+    .navbar-nav .form-button {
+        width: 250px;
+        text-align: center;
+    }
+    .navbar-nav .smartforms-modal-trigger {
+        width: 250px;
+    }
+    .jumbotron {
+        margin: 90px 0 20px;
+    }
+    .title-text {
+        font-size: 2.2rem;
+        padding: 0 0px 20px;
+    }
+    .title-paragraph-1 {
+        font-size: 1.1rem;
+        padding: 0 0 20px;
+    }
+    .card-title {
+        font-size: 1.7rem;
+    }
+    .card-text {
+        font-size: 1.1rem;
+    }
+    .list-group-item {
+        font-size: 1.2rem;
+    }
+    .reviews-text {
+        font-size: 0.9rem;
+    }
+    .review-name {
+        font-size: 0.9rem;
+    }
+    .contact-information {
+        min-width: 350px;
+        max-width: 375px;
+    }
+    .contact-h5 {
+        font-size: 1rem;
+    }
+    .copyright {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
 
 }
 
@@ -398,11 +493,11 @@ p, li {
     }
 
     #about-us-section .container-fluid {
-        padding: 5% 10% 5%;
+        padding: 5% 10%;
     }
 
     #services-section .container-fluid {
-        padding: 5% 10% 5%;
+        padding: 5% 10%;
     }
 
     .card-img {
@@ -418,7 +513,7 @@ p, li {
 @media (min-width: 1201px) and (max-width: 1920px) {
 
     .carousel-item {
-        height: 1000px; 
+        height: 900px; 
     }
 
     .reviews-container {
@@ -434,7 +529,7 @@ p, li {
 @media (min-width: 901px) and (max-width: 1200px) {
 
     .carousel-item {
-        height: 900px; 
+        height: 800px; 
     }
 
     .reviews-container {
