@@ -21,11 +21,11 @@ body {
 }
 
 .navbar-brand {
-    min-width: 210px;
+    min-width: 250px;
 }
 
 .nav-logo {
-    height: 90px;
+    height: 120px;
 }
 
 .nav-item {
@@ -194,6 +194,8 @@ body {
 }
 
 .card-services {
+    padding-top: 25px;
+    padding-bottom: 25px;
     background-image: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 100%);
 }
 
@@ -400,6 +402,18 @@ body {
 
 }
 
+/* Switch gradient when for multi line title text */
+@media (max-width: 1900px) {
+    .title-text {
+        background: #D90D0D;
+        background: -moz-linear-gradient(left, #D90D0D 0%, #301414 95%, #000000 100%);
+        background: -webkit-linear-gradient(left, #D90D0D 0%, #301414 95%, #000000 100%);
+        background: linear-gradient(to right, #D90D0D 0%, #301414 95%, #000000 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
 /* Global Font and Spacing Optimization */
 
 @media (max-width: 576px) {
@@ -477,7 +491,7 @@ body {
 }
 
 @media (min-width: 992px) {
-
+    
 }
 
 @media (min-width: 1200px) {
