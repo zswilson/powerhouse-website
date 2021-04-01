@@ -217,20 +217,19 @@ body {
     background: -moz-radial-gradient(center, #FAFDFF 0%, #ADB9BF 50%, #60717D 100%);
     background: -webkit-radial-gradient(center, #FAFDFF 0%, #ADB9BF 50%, #60717D 100%);
     background: radial-gradient(ellipse at center, #FAFDFF 0%, #ADB9BF 50%, #60717D 100%);
-    padding: 3% 2% 0%;
+    padding: 4% 4% 0%;
 }
 
 .gallery-shadow {
-    box-shadow: -10px 0px 13px -7px #303030, 10px 0px 13px -7px #000000, 0px 0px 60px 15px #303030 !important;
+    box-shadow: -10px 0px 13px -7px #303030, 10px 0px 13px -7px #000000, 0px 0px 60px 30px #303030 !important;
 }
 
 .carousel-inner {
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 .carousel-item {
     width: 100%; 
-    height: 800px; 
     overflow: hidden;
 }
 
@@ -526,8 +525,8 @@ body {
 
 @media (min-width: 1201px) and (max-width: 1920px) {
 
-    .carousel-item {
-        height: 900px; 
+    .gallery-container {
+        padding: 5% 7% 0;
     }
 
     .reviews-container {
@@ -542,8 +541,8 @@ body {
 
 @media (min-width: 901px) and (max-width: 1200px) {
 
-    .carousel-item {
-        height: 800px; 
+    .gallery-container {
+        padding: 5% 5% 0;
     }
 
     .reviews-container {
@@ -559,8 +558,8 @@ body {
 
 @media (max-width: 900px) {
 
-    .carousel-item {
-        height: 600px; 
+    .gallery-container {
+        padding: 5% 2% 0;
     }
 
     .reviews-text-box {
@@ -584,10 +583,9 @@ body {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
 
-    .carousel-item {
-        height: 1400px; 
+    .gallery-container {
+        padding: 5% 10% 0;
     }
-
     .reviews-container {
         padding: 5% 18%;
     }
@@ -600,8 +598,8 @@ body {
 
 @media (min-width: 2561px) and (max-width: 3440px) {
 
-    .carousel-item {
-        height: 1600px; 
+    .gallery-container {
+        padding: 5% 12% 0;
     }
 
     .reviews-container {
